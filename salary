@@ -1,0 +1,63 @@
+import random
+class Employee:
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+
+def choosing():
+    print("If you want to sort employees with their salary in ascending order type 1 ")
+    if raw_input = 1
+
+
+def bubble_sort(collection):
+    length = len(collection)
+    for i in range(length):
+        swapped = False
+        for j in range(length - 1):
+            if collection[j].salary > collection[j + 1].salary:
+                swapped = True
+        collection[j].salary, collection[j + 1].salary = collection[j + 1].salary, collection[j].salary
+        if not swapped: break  # Stop iteration if the collection is sorted.
+        return collection
+
+if __name__ == '__main__':
+    try:
+        raw_input
+    except NameError:
+        raw_input = input
+
+    user_input = raw_input('Enter numbers separated by a comma:\n').strip()
+    unsorted = [int(item) for item in user_input.split(',')]
+    print(bubble_sort(unsorted))
+
+
+else:
+
+    def bubble_sort1(collection):
+        length = len(collection)
+        for i in range(length):
+            swapped = False
+
+
+def bubble_sort(collection):
+    length = len(collection)
+    for i in range(length):
+        swapped = False
+        for j in range(length - 1):
+            if collection[j].salary > collection[j + 1].salary:
+                swapped = True
+        collection[j].salary, collection[j + 1].salary = collection[j + 1].salary, collection[j].salary
+        if not swapped: break  # Stop iteration if the collection is sorted.
+        return collection
+
+
+def main():
+    empls = []
+    for i in range(0, 100):
+        empl = Employee("Person whose name is " + str(i), random.randint(1,100))
+        empls.append(empl)
+    print empls
+
+main()
